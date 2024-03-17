@@ -1,0 +1,33 @@
+-- Tạo Cơ sở dữ liệu
+CREATE DATABASE userdb;
+
+-- Kết nối vào Cơ sở dữ liệu
+\c movie_database;
+
+-- Tạo bảng Users
+CREATE TABLE Users (
+    Id serial PRIMARY KEY,
+    Full_Name varchar(40) NOT NULL,
+    Email varchar(100) NOT NULL UNIQUE,
+    Image text,
+    Is_Admin boolean,
+    Like_Movies double precision[],
+    Password varchar(64) NOT NULL
+);
+
+-- Tạo bảng Sessions
+CREATE TABLE Sessions (
+    Id_Session serial PRIMARY KEY,
+    Id_User integer REFERENCES Users(Id),
+    Signed_At timestamptz,
+    Verified_At timestamptz,
+    Token text
+);
+
+-- Tạo bảng Challengers
+CREATE TABLE Challengers (
+    Id_Challengers serial PRIMARY KEY,
+    Id_User integer REFERENCES Users(Id),
+    Failed integer CHECK (Failed >= 1),
+    Last_Failed_At timestamptz
+);
