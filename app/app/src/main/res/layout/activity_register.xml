@@ -97,15 +97,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_height="match_parent">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:fontFamily="@font/rancho"
-                    android:textSize="18sp"
-                    android:drawablePadding="15dp"
-                    android:drawableLeft="@drawable/person"
-                    android:layout_height="wrap_content"
-                    android:hint="Image" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
