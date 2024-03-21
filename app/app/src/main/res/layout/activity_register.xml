@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/rancho"
-                    android:text="--New Registration Panel--"
+                    android:text="Đăng ký"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
 
@@ -39,9 +39,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/rancho"
-                    android:text="Get Connected, Be updated, Welcome"
+                    android:text="Welcome"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="30sp"/>
 
 
 
@@ -98,6 +98,8 @@
                 android:layout_height="match_parent">
 
 
+            </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_marginRight="25dp"
@@ -151,7 +153,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:drawableRight="@drawable/arrow"
-                android:text="Click to Register"
+                android:text="Đăng ký"
                 android:fontFamily="@font/rancho"
                 android:backgroundTint="@color/black"
                 android:padding="10dp"
@@ -165,7 +167,7 @@
                 android:fontFamily="@font/rancho"
                 android:text="Login Account"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="30sp"/>
 
 
         </LinearLayout>
