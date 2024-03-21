@@ -165,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/rancho"
-                android:text="Login Account"
+                android:text="Đăng nhập tài khoản"
                 android:textColor="@color/black"
                 android:textSize="30sp"/>
 

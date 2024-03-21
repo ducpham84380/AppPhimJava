@@ -99,7 +99,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:drawableRight="@drawable/arrow"
-                android:text="Click to Login"
+                android:text="Đăng nhập"
                 android:fontFamily="@font/rancho"
                 android:backgroundTint="@color/black"
                 android:padding="10dp"
@@ -111,9 +111,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/rancho"
-                android:text="Create Register"
+                android:text="Tạo tài khoản"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
         </LinearLayout>
     </ScrollView>
 </layout>
