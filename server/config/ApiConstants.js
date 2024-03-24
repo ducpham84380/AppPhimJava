@@ -12,6 +12,7 @@ const apiConstants = {
     API_UPDATE_ENGINES_CATEGORY: "/api-update-category",
     API_CREATE_ENGINES_FILM: "/api-create-film",
     API_ENGINES_FILM_ALL: "/api-film-all",
+    API_ENGINES_FILM_CATEGORY: "/api-get-film-category",
     API_ENGINES_FILM_SHOW: "/api-film-show",
     API_UPLOAD_FILE_IMAGES: "/api-upload-images",
 };

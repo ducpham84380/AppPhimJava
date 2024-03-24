@@ -18,4 +18,5 @@ router.post(apiConstants.API_DELETE_ENGINES_CATEGORY, ControllerEngines.deleteCa
 router.post(apiConstants.API_CREATE_ENGINES_FILM, ControllerEngines.createFilm);
 router.post(apiConstants.API_ENGINES_FILM_ALL, ControllerEngines.getAllFilm);
 router.post(apiConstants.API_ENGINES_FILM_SHOW, ControllerEngines.getFilmShow);
+router.post(apiConstants.API_ENGINES_FILM_CATEGORY, ControllerEngines.getFilmCategory);
 module.exports = router;

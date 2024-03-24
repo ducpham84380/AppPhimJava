@@ -19,9 +19,14 @@ const ControllerEngines = {
 
     getAllMedia: async (req, res) => {
         try {
-            const result = { media: []};
-            result.media =
-                await ServiceEngines.selectMedia();
+            const result = { media: [] };
+    
+            // Fetch media
+            // Fetch additional data from API
+            const response = await fetch('https://phimapi.com/theloai/');
+            const additionalData = await response.json();
+            result.media = additionalData; // Assuming you want to add this data to the result
+    
             if (!result.media) {
                 return httpHandler.unauthorized(res);
             } else {
@@ -137,8 +142,9 @@ const ControllerEngines = {
     getAllFilm: async (req, res) => {
         try {
             const result = { film: []};
-            result.film =
-                await ServiceEngines.selectFilm();
+            const response = await fetch('https://phimapi.com/theloai/');
+            const additionalData = await response.json();
+            result.film =additionalData;
             if (!result.film) {
                 return httpHandler.unauthorized(res);
             } else {
@@ -154,6 +160,22 @@ const ControllerEngines = {
             const result = { film: []};
             result.film =
                 await ServiceEngines.selectFilmShow();
+            if (!result.film) {
+                return httpHandler.unauthorized(res);
+            } else {
+                return httpHandler.success(res, result);
+            }
+        } catch (error) {
+            return httpHandler.serverError(res, error.message);
+        }
+    },
+    getFilmCategory: async (req, res) => {
+        try {
+            const result = { film: []};
+            const nameCategory = req.body.nameCategory;
+            const response = await fetch('https://phimapi.com/v1/api/danh-sach/'+nameCategory);
+            const additionalData = await response.json();
+            result.film = additionalData;
             if (!result.film) {
                 return httpHandler.unauthorized(res);
             } else {
